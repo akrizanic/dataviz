@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include dataviz/static *
+recursive-include dataviz/templates *

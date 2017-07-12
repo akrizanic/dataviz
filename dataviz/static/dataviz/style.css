@@ -1,0 +1,29 @@
+body {
+    background: #ABCDEF;
+}
+
+.top-buffer {
+        margin-top: 40px;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1px;
+  //stroke: red;
+}
+
+.color1 {
+  stroke: green;
+}
+
+.color2 {
+  stroke: blue;
+}
+
+.color3 {
+  stroke: red;
+}
+
+.color4 {
+  stroke: orange;
+}

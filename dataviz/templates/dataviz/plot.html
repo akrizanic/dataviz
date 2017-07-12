@@ -1,0 +1,29 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data visualisation</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dataviz/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'dataviz/style.css' %}" />
+    <script src="{% static 'dataviz/d3.min.js' %}"></script>
+    <script src="{% static 'dataviz/jquery-3.2.1.min.js' %}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row top-buffer">
+            <div class="col-md-12">
+                <div class="well">
+                    <svg id="plot"></svg>
+                </div>
+                <br />
+                <a href="{% url 'dataviz:upload' %}">Back to Upload</a>
+            </div>
+        </div>
+    </div>
+
+
+<script src="{% static 'dataviz/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload csv</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'dataviz/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'dataviz/style.css' %}" />
+</head>
+<body>
+<div class="container">
+    <div class="row top-buffer">
+        <div class="col-md-6 col-md-offset-3">
+            <h2>Upload CSV file</h2>
+            <form action="{% url 'dataviz:upload' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="file" name="csvfile" class="form-control-file">
+                </div>
+                <input type="submit" value="Upload" class="btn btn-primary">
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
